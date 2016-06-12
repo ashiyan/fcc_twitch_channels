@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1 class="title">Twitch.tv channels monitor</h1>
+    <form class="show-options-container">
+        <h2 class="show-options-container-title">Show:</h2>
+        <div class="btn-container">
+            <label class="btn-label"><input type="radio" class="btn btn-radio btn-all" name="settings" checked> All</label>
+            <label class="btn-label"><input type="radio" class="btn btn-radio btn-online" name="settings"> Online</label>
+            <label class="btn-label"><input type="radio" class="btn btn-radio btn-offline" name="settings"> Offline</label>
+        </div>
+        <label class="btn-label">Show unavailable channels: <input type="checkbox" class="btn btn-check btn-unavailable" name="check" checked></label>
+    </form>
+    <div class="channel-list"></div>
+</body>
+</html>
+
+

@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Roboto Light";
+  font-style: normal;
+  src: url("fonts/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "Quantico Regular";
+  font-style: normal;
+  src: url("fonts/Quantico-Regular.otf");
+}
+body {
+  font-family: "Roboto Light";
+}
+.title {
+  font-family: "Quantico Regular";
+  text-align: center;
+}
+.show-options-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  min-width: 300px;
+  margin: 0 auto 30px;
+  justify-content: center;
+  align-items: space-around;
+}
+.show-options-container-title {
+  height: 70px;
+  line-height: 70px;
+  margin: 0;
+  font-family: "Quantico Regular";
+  font-size: 100%;
+}
+.btn-container {
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+}
+.btn-label {
+  margin: 0 15px;
+  font-family: "Quantico Regular";
+}
+.btn-radio,
+.btn-check {
+  -webkit-appearance: none;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  background-color: #c1c1c1;
+  border: 2px solid #000;
+  box-shadow: 0 0 3px #000 inset;
+}
+.btn-radio:checked,
+.btn-check:checked {
+  background-color: #40fc38;
+}
+.btn-radio:focus,
+.btn-check:focus {
+  outline: none;
+}
+.btn-radio {
+  border-radius: 50%;
+}
+.channel-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.channel-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  min-width: 300px;
+  width: 300px;
+  height: 80px;
+  margin: 10px;
+  background-color: #455a64;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.channel-logo {
+  width: 80px;
+  height: 100%;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.channel-name {
+  width: 200px;
+  height: 25px;
+  width: 100%;
+  color: #cfd8dc;
+  font-weight: bold;
+  font-size: 110%;
+  text-decoration: none;
+  transition: 350ms;
+  cursor: pointer;
+}
+.channel-name:hover {
+  color: #cddc39;
+  transition: 350ms;
+}
+.channel-name-offline::before,
+.channel-name-online::before,
+.channel-name-unavailable::before {
+  content: '';
+  margin-right: 5px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  box-shadow: 0 0 3px #000 inset;
+}
+.channel-name-offline::before {
+  background-color: #fc3838;
+}
+.channel-name-online::before {
+  background-color: #40fc38;
+}
+.channel-name-unavailable::before {
+  background-color: #434343;
+}
+.channel-game {
+  width: 200px;
+  color: #cfd8dc;
+  cursor: default;
+  font-size: 80%;
+}

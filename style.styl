@@ -1,0 +1,115 @@
+@font-face
+    font-family "Roboto Light"
+    font-style normal
+    src url(fonts/Roboto-Light.ttf)
+    
+@font-face
+    font-family "Quantico Regular"
+    font-style normal
+    src url(fonts/Quantico-Regular.otf)
+
+body
+    font-family "Roboto Light"    
+    
+.title
+    font-family "Quantico Regular"
+    text-align center
+    
+.show-options-container
+    display flex
+    flex-wrap wrap
+    width 300px
+    min-width 300px
+    margin 0 auto 30px
+    justify-content center
+    align-items space-around
+    &-title
+        height 70px
+        line-height 70px
+        margin 0
+        font-family "Quantico Regular"
+        font-size 100%
+        
+.btn
+    &-container
+        height 70px
+        display flex
+        flex-direction column
+    &-label
+        margin 0 15px
+        font-family "Quantico Regular"
+    &-radio,
+    &-check
+        -webkit-appearance none
+        position relative
+        width 15px
+        height 15px
+        background-color #c1c1c1
+        border 2px solid black
+        box-shadow 0 0 3px black inset
+        &:checked
+            background-color #40fc38
+        &:focus
+            outline none
+    &-radio
+        border-radius 50%
+
+.channel
+    &-list
+        display flex
+        flex-wrap wrap
+    &-item
+        display flex
+        flex-direction column
+        flex-wrap wrap
+        position relative
+        min-width 300px
+        width 300px
+        height 80px
+        margin 10px
+        background-color #455A64
+        border-top-left-radius 40px
+        border-bottom-left-radius 40px
+        border-top-right-radius 5px
+        border-bottom-right-radius 5px
+    &-logo
+        width 80px
+        height 100%
+        border-radius 50%
+        margin-right 5px
+    &-name
+        width 200px
+        height 25px
+        width 100%
+        color #CFD8DC
+        font-weight bold
+        font-size 110%
+        text-decoration none
+        transition 350ms
+        cursor pointer
+        &:hover
+            color #CDDC39
+            transition 350ms
+        &-offline,
+        &-online,
+        &-unavailable
+            &::before
+                content ''
+                margin-right 5px
+                display inline-block
+                width 10px
+                height 10px
+                border 1px solid black
+                border-radius 50%
+                box-shadow 0 0 3px black inset
+        &-offline::before
+            background-color #fc3838
+        &-online::before
+            background-color #40fc38
+        &-unavailable::before
+            background-color #434343
+    &-game
+        width 200px
+        color #CFD8DC
+        cursor default
+        font-size 80%
