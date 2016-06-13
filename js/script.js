@@ -15,13 +15,13 @@ $(document).ready(function () {
             
             // if channel does not exist
             if (data.error) {
-                $(".channel-list").append("<div class='channel-item channel-item-unavailable'><img class='channel-logo' src='images/not-exist.png'/><span class='channel-name channel-name-unavailable'>" + channels[index] + "</span><span class='channel-game'>" + data.message + "</span></div>");
+                $(".channel-list").append("<div class='channel-item channel-item-unavailable'><img class='channel-logo' src='img/not-exist.png'/><span class='channel-name channel-name-unavailable'>" + channels[index] + "</span><span class='channel-game'>" + data.message + "</span></div>");
             }
             
             // if channel not streaming
             else if (!data.stream) {
                 var channelName = data._links.self.split('/').pop();
-                $(".channel-list").append("<div class='channel-item channel-item-offline'><img class='channel-logo' src='images/no_logo.png'/><span class='channel-name channel-name-offline'>" + channelName + "</span><span class='channel-game'>Not streaming.</span></div>");
+                $(".channel-list").append("<div class='channel-item channel-item-offline'><img class='channel-logo' src='img/no_logo.png'/><span class='channel-name channel-name-offline'>" + channelName + "</span><span class='channel-game'>Not streaming.</span></div>");
             }
             
             // if channel streaming now

@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Roboto Light";
   font-style: normal;
-  src: url("fonts/Roboto-Light.ttf");
+  src: url("../fonts/Roboto-Light.ttf");
 }
 @font-face {
   font-family: "Quantico Regular";
   font-style: normal;
-  src: url("fonts/Quantico-Regular.otf");
+  src: url("../fonts/Quantico-Regular.otf");
 }
 body {
   font-family: "Roboto Light";
@@ -16,23 +16,12 @@ body {
   text-align: center;
 }
 .show-options-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 300px;
   min-width: 300px;
   margin: 0 auto 30px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: space-around;
-  -webkit-align-items: space-around;
-  -ms-flex-align: space-around;
   align-items: space-around;
 }
 .show-options-container-title {
@@ -44,14 +33,7 @@ body {
 }
 .btn-container {
   height: 70px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 .btn-label {
@@ -80,26 +62,12 @@ body {
   border-radius: 50%;
 }
 .channel-list {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .channel-item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   position: relative;
   min-width: 300px;
@@ -126,13 +94,11 @@ body {
   font-weight: bold;
   font-size: 110%;
   text-decoration: none;
-  -webkit-transition: 350ms;
   transition: 350ms;
   cursor: pointer;
 }
 .channel-name:hover {
   color: #cddc39;
-  -webkit-transition: 350ms;
   transition: 350ms;
 }
 .channel-name-offline::before,
